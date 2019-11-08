@@ -1,42 +1,241 @@
-<html>
-    <head>
-        <title>Template</title>
-        <link rel="stylesheet" href="template2.css">
-        <link rel="icon" href="logo.png" type="image/x-icon">
-    </head>
-    <body>
-        <div id="header">
-            <img src="logo.png" style="width:50px;height:50px;" />
-            <h1 id="main_title">E-Prakruthi</h1>
-            <nav class="links">
-                    <div class="ref">
-                        <a href="#">Home</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Feedback</a>
-                        <a href="#">Help</a>
-                    </div>
-            </nav>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title>Navigation Bar</title> 
+	
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    
+    <link rel="stylesheet" href="template.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"> </script> 
+
+  <script src="template.js"></script>
+</head> 
+
+<body> 
+	
+    <div class="page-content p-5" id="content">
+
+      <!-- Toggle button -->
+      <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-3 mb-4"><i class="fa fa-bars" style="font-size:24px;color:red"></i></button>
+      
+      <div class="wordart blues">        
+        <span class="text">E-Prakruthi</span></div>
+
+      <nav class="navbar navbar-expand-sm bg-success navbar-dark" > 
+        
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#"> 
+          <img src= 
+  "https://www.geeksforgeeks.org/wp-content/uploads/gfg_transparent_white_small.png"
+          alt="logo" style="width:40px;"> 
+        </a> 
+        
+        <div class="collapse navbar-collapse" id="collapse_Navbar"> 
+          <ul class="navbar-nav"> 
+            <li class="nav-item"> 
+              <a class="nav-link" href="#">Home</a> 
+            </li> 
+          
+            <li class="nav-item"> 
+              <a class="nav-link" href="#">Abount Us</a> 
+            </li> 
+          
+            <li class="nav-item"> 
+              <a class="nav-link" href="#">Feedback</a> 
+                      </li> 
+                      
+            <li class="nav-item"> 
+              <a class="nav-link" href="#">Help</a> 
+            </li> 
+          </ul> 
+        </div> 
+        
+        <form class="form-inline" action="#"> 
+          <input class="form-control mr-sm-2" type="text"
+              placeholder="Search"> 
+          <button class="btn btn-primary" type="submit">Search</button> 
+        </form> 
+      </nav><br>
+
+      <div id="text">
+        <h1 id="heading">Graphs and Interpretations:</h1><br>
+          <caption><h3 id="caption">Analysis on Natural Resources :</h3></caption>
+            <table id="table1">
+              <ul>
+                <tr>
+                  <td><li>This graph symbolizes the usage of traditional fuel over several years.</li></td>
+                  <td rowspan="3"><img src="graph1.png" width="500px" height="220px"></td>
+                </tr>
+                <tr>
+                  <td><li>Period on X-axis versus Energy produced in GTOE on Y-axis.</li></td>
+                </tr>
+                <tr>
+                  <td><li>GTOE - GigaTons of Oil Equivalent.</li></td>
+                </tr>
+              </ul>
+            </table><br><br><br><br>
+
+            <caption><h3 id="caption">Interpretation on Renewable resources :</h3></caption>
+            <table id="table2">
+              <ul>
+                <tr>
+                  <td rowspan="4"><img src="graph2.png" width="500px" height="220px"></td>
+                  <td><li>This is a stacked bar graph.</li></td>
+                </tr>
+                <tr>
+                  <td><li>It interprets the usage of renewable resources in past years and predicts its future use.</li></td>
+                </tr>
+                <tr>
+                  <td><li>X-axis : Period ; Y-axis : Relative Quantity of Usage</li></td>
+                </tr>
+              </ul>
+              </table><br><br><br><br>
+
+                <caption><h3 id="caption">Solar Panel Instalation and Cost :</h3></caption>
+                <table id="table3">
+                  <ul>
+                    <tr>
+                      <td><li>This is a continuous line plot.</li></td>
+                      <td rowspan="4"><img src="graph3.jpg" width="500px" height="220px"></td>
+                    </tr>
+                    <tr>
+                      <td><li>It includes two graphs and their interpretation as their X-axis is same.</li></td>
+                    </tr>
+                    <tr>
+                      <td><li>X-axis : Period ; Y-axis on left : Price ; Y-axis on right : Solar Panel Installation.</li></td>
+                    </tr>
+                  </ul>
+                  </table><br><br><br><br>
+
+                  <caption><h3 id="caption">Pattern of Patents on Alternate Energy Sources :</h3></caption>
+                  <table id="table4">
+                    <ul>
+                      <tr>
+                        <td rowspan="4"><img src="graph4.svg" width="500px" height="220px"></td>
+                        <td><li>This is a left skewed plot.</li></td>
+                      </tr>
+                      <tr>
+                        <td><li>It is a continuous representation of stacked graphs.</li></td>
+                      </tr>
+                      <tr>
+                        <td><li>X-axis : Period ; Y-axis : Number of patents.</li></td>
+                      </tr>
+                    </ul>
+                    </table><br><br><br><br>
+
+                  <caption><h3 id="caption">Chart on Investment in Renewable Energies :</h3></caption>
+                  <table id="table5">
+                    <ul>
+                      <tr>
+                        <td><li>This is a pie chart.</li></td>
+                        <td rowspan="4"><img src="graph5.png" width="500px" height="220px"></td>
+                      </tr>
+                      <tr>
+                        <td><li>It signifies the investment done by different countries in the year 2018.</li></td>
+                      </tr>
+                      <tr>
+                        <td><li>Labels : Countries ; Values : Investments.</li></td>
+                      </tr>
+                    </ul>
+                  </table>
+
+                  
+      </div>
+    </div>
+      
+    <!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-light">
+      <div class="media d-flex align-items-center"><img src="image.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+          <h4 class="m-0">Name</h4>
+          <p class="font-weight-light text-muted mb-0">User</p>
         </div>
-        <div id="side">
-                <div id="ref2">
-                    <p><a href="#">Find It Out????</a></p><br>
-                    <p><a href="#">Graphs and analysis</a></p><br>
-                    <p><a href="#">News and Updates</a></p><br>
-                    <p><a href="#">Greenometer</a></p><br>
-                    <p><a href="#">Polls and Survey</a></p>
-                </div>
-        </div>
-        <div id="footer">
-            <footer id="last">
-                <img src="facebook.png" width="30" height="30" class="icon1"/>
-                <img src="twitter.png" width="30" height="30" class="icon2"/>
-                <img src="linkedin.png" width="30" height="30" class="icon3"/>
-                <img src="gmail.png" width="30" height="30" class="icon4"/>
-                <p>
-                    <span id="f1">Contact Details: </span><br>
-                    <span id="f2">Forward your queries at:------@gmail.com<br></span>
-                </p>
-            </footer>
-        </div>
-    </body>
-</html>
+      </div>
+    </div>
+  
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+  
+    <ul class="nav flex-column bg-white mb-0" id="main">
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic ">
+                  <i class="fa fa-search-plus mr-3 text-primary fa-fw"></i>
+                  Search & Find Out
+              </a>
+        </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-assistive-listening-systems mr-3 text-primary fa-fw"></i>
+                  Greenometer    
+              </a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                  Statistical Analysis & Graphs
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-list-ul mr-3 text-primary fa-fw"></i>
+                  Polls & Surveys
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-newspaper-o mr-3 text-primary fa-fw"></i>
+                  Newsletters
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-sitemap mr-3 text-primary fa-fw"></i>
+                  Awareness & Solutions  
+              </a>
+      </li>
+    </ul>
+  
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Login Credentials</p>
+  
+    <ul class="nav flex-column bg-white mb-0" id="login">
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-unlock mr-3 text-primary fa-fw"></i>
+                  Register
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-sign-in mr-3 text-primary fa-fw"></i>
+                  Login
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link font-italic">
+                  <i class="fa fa-thumbs-o-up mr-3 text-primary fa-fw"></i>
+                  Subscribe
+              </a>
+      </li>
+    </ul>
+  </div>
+  <!-- End vertical navbar -->
+
+  
+</body> 
+
+</html>					 
