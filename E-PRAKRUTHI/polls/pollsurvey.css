@@ -1,0 +1,148 @@
+.wordart {
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 50px;;
+  }
+  
+  .wordart.blues .text {
+    font-family: Impact, sans-serif;
+    color: #185a11;
+    -webkit-text-stroke: 0.01em #b2b2d6;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#9e9eb4,Strength=1);
+    text-shadow: 0.13em -0.09em 0px #020224;
+    letter-spacing: -0.05em;
+}
+  
+  .vertical-nav {
+      min-width: 17rem;
+      width: 17rem;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s;
+    }
+    
+    .page-content {
+      width: calc(100% - 17rem);
+      margin-left: 17rem;
+      transition: all 0.4s;
+    }
+    
+    /* for toggle behavior */
+    
+    #sidebar.active {
+      margin-left: -17rem;
+    }
+    
+    #content.active {
+      width: 100%;
+      margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+      #sidebar {
+        margin-left: -17rem;
+      }
+      #sidebar.active {
+        margin-left: 0;
+      }
+      #content {
+        width: 100%;
+        margin: 0;
+      }
+      #content.active {
+        margin-left: 17rem;
+        width: calc(100% - 17rem);
+      }
+    }
+    
+    body {
+      background : url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS8cZLsl9NsOGnDkbAT48xW8W5mP0wL3IR2S6t18zgPWarRhnn") no-repeat center fixed;
+      /* background-repeat: repeat-y;  */
+      background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size:  cover;
+        background-color: #999;
+    }
+#main a,#login a{
+transition:0.7s;
+}
+    
+    #main a:hover{
+      background-color: chartreuse;
+      color:black;
+    }
+  
+    #login a:hover{
+      background-color: chartreuse;
+      color:black;
+    }
+  
+    #main a:active{
+      background-color: black;
+      color: blanchedalmond;
+    }
+  
+    #login a:active{
+      background-color: blue;
+      color: blanchedalmond;
+    }
+  
+    #heading{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      font-weight: bolder;
+      text-shadow: 2px 2px 8px blue;
+      font-size:54px;
+    }
+#subhead{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      font-weight: bolder;
+}
+.form-group{
+	padding-left:15px;
+	padding-right:15px;
+	top:12px;
+	border:2px solid black;
+	margin-top:15px;
+	background-image:linear-gradient(to right,#fff,#fff,#fff);
+  border-radius:50px 50px ;  
+}
+label{
+	font-size:25px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  text-shadow: 2px 2px 8px green;font-weight: bolder;
+}
+.form-group:hover
+{
+   background-image:linear-gradient(to right,#E1FF2E,#9EFF2E,#faf096);
+   
+   transform:scale(1.04);
+}
+
+  
+    #table1,#table2,#table3,#table4,#table5{
+      font-size:24px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 800;
+    }
+  
+    #table1 td,#table2 td,#table3 td,#table4 td,#table5 td{
+      padding:10px;
+    }
+    #caption{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+    }
+.btn btn-default{
+background-image:linear-gradient(to right,blue,darkblue,pink);
+size:20px;
+}

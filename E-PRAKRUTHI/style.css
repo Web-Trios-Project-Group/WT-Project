@@ -1,0 +1,145 @@
+/* Navigation - START */
+body,h1 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body, html {
+    height: 100%
+  }
+
+  .bgimg {
+    background-image: url('images/home.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #parent{
+    position:relative;
+  }
+
+  #child1{
+    position: absolute;
+    bottom:50px;
+    left:300px;
+  }
+
+  #child2{
+    position: absolute;
+    bottom:50px;
+    right:250px;
+  }
+
+  body,h1,h2,h3,h4,h5,h6{
+    font-family: "Lato", sans-serif
+  }
+
+  .w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,.fa-coffee {
+    font-size:200px;
+  }
+
+/* Navigation - END */
+
+
+/* Form - START */
+#message {
+    display:none;
+    color: #000;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+}
+  
+#message p {
+    padding: 5px 35px;
+    font-size: 15px;
+}
+
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "\2713";
+}
+
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\292B";
+}
+/* Form - END */
+
+/* Node Structure - START */
+
+.ciclegraph {
+    position: relative;
+    width: 400px; /*change*/
+    height: 400px;
+    margin: auto;
+    margin-top: 75px;
+    filter: drop-shadow(12px 12px 13px currentcolor);
+    
+}
+
+.ciclegraph .circle {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: calc( -100px / 2 );
+    background: rgb(105, 219, 166);
+    border-radius: 50%;
+}
+
+.center-circle {
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: calc( -100px / 2 );
+}
+
+.middle{
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 13px currentcolor);
+}
+
+figure, img {
+    height: inherit;  
+    width:inherit;
+    object-fit:fill;
+}
+
+.shape {
+    display: block;
+    margin: 0 1em;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    transition: 2.5s;
+    
+}
+.shape:hover {
+    clip-path: polygon(90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%, 50% 0%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.zoom {
+    transition: transform .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.5); 
+    cursor: pointer;
+}
+/* Node Structure - END */
