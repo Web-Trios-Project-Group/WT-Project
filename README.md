@@ -2,7 +2,7 @@
 
 * This website aims towards addressing one of the Global Challenge For The Engineers.
   
-* The Global Challenge is the <b>Optimum use of Alternate Resources of Energy.
+* The Global Challenge is the Optimum use of Alternate Resources of Energy.
         
 * This site aims at providing basic knowledge of Alternate Resources to common man.
         
