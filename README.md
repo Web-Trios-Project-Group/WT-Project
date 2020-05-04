@@ -1,6 +1,6 @@
 ## WT-Project
 
-* This website aims towards addressing one of the <b>Global Challenge For The Engineers.
+* This website aims towards addressing one of the Global Challenge For The Engineers.
   
 * The Global Challenge is the <b>Optimum use of Alternate Resources of Energy.
         
